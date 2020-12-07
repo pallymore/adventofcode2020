@@ -1,7 +1,7 @@
 const readline = require("readline");
 const fs = require("fs");
 
-async function solutionPartOne() {
+async function solution() {
   const inputStream = fs.createReadStream("./input");
 
   const rl = readline.createInterface({
@@ -72,4 +72,4 @@ function validatePassword(passport) {
   });
 }
 
-solutionPartOne().then(console.log);
+solution().then(console.log);
