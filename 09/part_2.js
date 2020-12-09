@@ -32,7 +32,7 @@ function findRange(numbers, sum) {
   }
 
   let head = 0;
-  for (tail = 2; tail < numbers.length; tail++) {
+  for (let tail = 2; tail < numbers.length; tail++) {
     let newSum = rollingSum + numbers[tail];
     while (newSum >= sum) {
       if (newSum === sum) {
