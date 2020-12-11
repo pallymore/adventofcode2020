@@ -30,6 +30,6 @@ async function solution() {
 
     prevJolts = jolts;
   }
-  // no answer
+
   return diffCounts["1"] * diffCounts["3"];
 }
