@@ -4,7 +4,6 @@ const fs = require("fs");
 solution().then(console.log);
 
 async function solution() {
-  //const inputStream = fs.createReadStream("./testInput");
   const inputStream = fs.createReadStream("./input");
 
   const rl = readline.createInterface({
