@@ -18,9 +18,6 @@ async function solution() {
     sum += processTokens(tokens);
   }
 
-  // const input = `((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2`;
-  // const tokens = input.split("").filter((t) => !!t && t != " ");
-
   return sum;
 }
 
@@ -37,7 +34,6 @@ function processTokens(tokens) {
 
     let n1;
     if (t === "(") {
-      // gather expression and process them as a token
       let pairs = 1;
       const subTokens = [];
       while (pairs !== 0) {
